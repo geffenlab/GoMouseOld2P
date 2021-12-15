@@ -47,10 +47,10 @@ end
 
 %% SET VARIABLES
 global pm
-pm.stimFolder = 'E:\stimuli\';
+pm.stimFolder = 'C:\stimuli\';
 pm.mouseFolder = 'C:\data\';
-pm.filterFolder = 'E:\calibration\Filters\';
-addpath('E:\GitHub\Kath\matlabGeneral\')
+pm.filterFolder = 'C:\Users\MMMBop\Documents\GitHub\filters\';
+addpath('C:\Users\MMMBop\Documents\GitHub\GoMouse_2P\_matlab_general\')
 
 
 
@@ -520,7 +520,7 @@ if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgr
     set(hObject,'BackgroundColor','white');
 end
 global pm
-set(hObject,'String',[pm.filterFolder '20170711_2PspkrNidaqInvFilt_3k-80k_fs400k.mat'])
+set(hObject,'String',[pm.filterFolder '20211213_New2PStim_1k-70k_fs400k_AL.mat'])
 
 function edit10_ButtonDownFcn(hObject, eventdata, handles)
 global pm
