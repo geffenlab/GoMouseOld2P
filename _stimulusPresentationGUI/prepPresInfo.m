@@ -93,6 +93,7 @@ if ~isempty(d)
         [ones(triggerDuration,1)*5;zeros((presInfo.preStimSil*fs)...
         -triggerDuration,1)]]; % Initial trigger event to the 2P microscope
     
+    %% video cam triggers
     if length(chanOut)==3 && chanOut(3)==2
         pulse = [ones(0.001*fs,1)*3;zeros(0.049*fs,1)]; % 20 Hz frame rate
         dur = round(length(presInfo.triggerAcquisition)/fs);
